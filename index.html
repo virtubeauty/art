@@ -2,541 +2,236 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Artihm Whitepaper</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artihm - NFT Art Generator</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link href="./assets/css/index.css" rel="stylesheet">
-	<link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
-	<meta name="virtual-protocol-site-verification" content="dba86d787ce65ee676fa1349e6a377b8" />
-	<meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@artihmai">
-    <meta name="twitter:title" content="Artihm - AI NFT Maker">
-    <meta name="twitter:description" content="Transform your creative vision into complete NFT collections instantly.">
-    <meta name="twitter:image" content="https://artihm.com/assets/img/logo.png">
-    <meta name="twitter:creator" content="@artihmai">
+    <style>
+        body {
+            background: #fff;
+            color: #000;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #fff;
+            color: #000;
+            text-align: center;
+            padding: 1.5em 0 1em 0;
+            border-bottom: 1px solid #000;
+        }
+        main {
+            max-width: 700px;
+            margin: 2em auto;
+            padding: 1em;
+        }
+        section {
+            margin-bottom: 2em;
+        }
+        h1, h2, h3, h4 {
+            color: #000;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+        }
+        h1 {
+            margin-top: 0;
+        }
+        h2 {
+            font-size: 1.3em;
+            border-left: 3px solid #000;
+            padding-left: 0.5em;
+        }
+        h3 {
+            font-size: 1.1em;
+        }
+        ul, ol {
+            padding-left: 1.2em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+            background: #fff;
+            color: #000;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 0.5em 0.8em;
+            text-align: left;
+        }
+        th {
+            background: #fff;
+            font-weight: bold;
+        }
+        .token-utility {
+            margin-top: 1em;
+        }
+        .utility-card {
+            border: 1px solid #000;
+            padding: 0.7em;
+            margin-bottom: 0.7em;
+            background: #fff;
+        }
+        .disclaimer {
+            background: #fff;
+            color: #000;
+            border: 1px solid #000;
+            padding: 1em;
+            margin-top: 2em;
+            font-size: 0.98em;
+        }
+    </style>
 </head>
 <body>
-    <div class="bg-animation"></div>
-    <div class="matrix-rain"></div>
-
-    <header class="header">
-        <div class="logo">
-            <div class="logo-icon"><img src="./assets/img/logo.png" alt="Artihm Logo" style="width:30px" ></div>
-            <div>
-                <div style="font-size: 0.7rem; color: var(--text-secondary); font-weight: 400;">Artihm</div>
-            </div>
-        </div>
-        <nav class="nav">
-            <a href="#">Launch</a>
-            <a href="#">Whitepaper</a>
-        </nav>
-        <div class="mobile-menu-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <a href="#" class="contact-btn" id="connect-wallet-btn">CONNECT WALLET</a>
+    <header>
+        <h1>Artihm Whitepaper</h1>
+        <p>Version 1.0 · May 2025</p>
     </header>
-
     <main>
-        <section class="hero">
-            <h1>Create NFT collection with AI</h1>
-            <p>Transform your creative vision into complete NFT collections instantly.<br>
-            Full-stack solution: AI generation, metadata creation, and blockchain deployment.</p>
-            
-            <div class="cta-section">
-                <div class="animated-prompt-container">
-                    <div class="animated-prompt-text" id="animated-prompt">Prompt the image you want to create as a base NFT</div>
-                </div>
-                <button class="generate-btn" id="join-launch-btn">Join Launch</button>             
+        <section>
+            <h2>Abstract</h2>
+            <p>
+                Artihm is a decentralized AI-driven NFT creation and deployment platform. By combining artificial intelligence with blockchain technology, Artihm allows users to generate unique, verifiably scarce digital artworks (NFTs) autonomously and deploy them on-chain. The ART token powers the ecosystem, enabling governance, minting, and incentivizing participation.
+            </p>
+        </section>
+        <section>
+            <h2>Vision</h2>
+            <p>
+                To democratize creativity by giving anyone access to generative AI tools that produce high-quality art and collectibles—fully secured, owned, and monetized via blockchain.
+            </p>
+        </section>
+        <section>
+            <h2>Key Features</h2>
+            <ul>
+                <li><b>AI-Generated Art:</b> AI models trained on diverse art styles and inputs generate unique NFT visuals and metadata.</li>
+                <li><b>NFT Deployment:</b> Instantly deploy artworks to EVM-compatible blockchains with smart contracts.</li>
+                <li><b>Rarity Engine:</b> Built-in rarity and trait combinatorics ensure each piece is unique and collectible.</li>
+                <li><b>NFT Studio:</b> No-code interface to create, preview, and mint collections.</li>
+                <li><b>DAO Governance:</b> ART token holders govern key decisions including model training direction, platform fees, and treasury use.</li>
+                <li><b>Creator Rewards:</b> Revenue-sharing and staking models for those who contribute training data or prompt templates.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Tokenomics</h2>
+            <table>
+                <tr>
+                    <th>Token Symbol</th>
+                    <td>ART</td>
+                </tr>
+                <tr>
+                    <th>Total Supply</th>
+                    <td>1,000,000,000</td>
+                </tr>
+                <tr>
+                    <th>Allocation</th>
+                    <td>
+                        <ul style="margin:0; padding-left:1.1em; list-style-type: disc;">
+                            <li>10% Ecosystem & Rewards</li>
+                            <li>20% Community Treasury</li>
+                            <li>10% Team</li>
+                            <li>10% Strategic Partnerships</li>
+                            <li>12.5% Liquidity</li>
+                            <li>37.5% Fair Launch</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2>ART Token Utility</h2>
+            <div class="token-utility" id="utility-list">
+                <!-- JS will populate utility cards here -->
             </div>
         </section>
-
-        <section class="features">
-            <div class="section-header">
-                <div class="section-tag">AI NFT Maker</div>
-                <h2 class="section-title">Most Advanced AI NFT Creator</h2>
-                <p class="section-description">
-                    After development of an Advanced NFT Art Generator, we are now offering the most advanced AI NFT Creator. We offer the AI image generation with high consistency across all images.
-                </p>
-            </div>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🎨</div>
-                    <h4>One-Click Creation & Deploy</h4>
-                    <p>Simply describe your vision through text prompts, and our AI instantly generates complete NFT collections ready for blockchain deployment.</p>
+        <section>
+            <h2>Technology Stack</h2>
+            <ul>
+                <li><b>Backend:</b> Python, PyTorch (for AI models), Node.js</li>
+                <li><b>Frontend:</b> React.js, Tailwind</li>
+                <li><b>Blockchain:</b> Ethereum + other EVM-compatible chains</li>
+                <li><b>Storage:</b> IPFS & Arweave for metadata and image permanence</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Roadmap</h2>
+            <div>
+                <div>
+                    <h3>Q2 2025</h3>
+                    <ul>
+                        <li>MVP Launch: NFT Generator & Basic Minting</li>
+                        <li>ART Token Generation Event</li>
+                        <li>Genesis Collection Launch</li>
+                    </ul>
                 </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">⚙️</div>
-                    <h4>Smart Trait System</h4>
-                    <p>Leverage advanced layering, trait combinations, and intelligent rarity distributions to craft unique NFTs with unlimited creative possibilities.</p>
+                <div>
+                    <h3>Q3 2025</h3>
+                    <ul>
+                        <li>DAO Formation</li>
+                        <li>Marketplace Integration</li>
+                        <li>AI Prompt Marketplace</li>
+                    </ul>
                 </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">📋</div>
-                    <h4>Universal Metadata Standards</h4>
-                    <p>Auto-generate blockchain-compatible metadata that seamlessly works across all major NFT platforms and marketplaces.</p>
+                <div>
+                    <h3>Q4 2025</h3>
+                    <ul>
+                        <li>Multichain Deployment (Polygon, Arbitrum)</li>
+                        <li>Trait-Based NFT Editor</li>
+                        <li>Community Airdrop</li>
+                    </ul>
                 </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🔗</div>
-                    <h4>Direct Market Access</h4>
-                    <p>Built-in marketplace connectivity ensures your NFT collections reach maximum audiences across all leading trading platforms.</p>
+                <div>
+                    <h3>2026</h3>
+                    <ul>
+                        <li>On-chain AI inference experimentation</li>
+                        <li>Integration with game and metaverse platforms</li>
+                    </ul>
                 </div>
             </div>
         </section>
-
-        <section class="faq">
-            <h2>Frequently asked questions</h2>
-            
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span>What blockchain networks are compatible with the platform?</span>
-                    <span class="faq-toggle">▼</span>
-                </div>
-                <div class="faq-answer">
-                    Our platform supports metadata generation for all major blockchain networks including Ethereum, Polygon, Solana, and Binance Smart Chain. Select your preferred network during the creation process for optimized compatibility.
-                </div>
+        <section>
+            <h2>Security & Audits</h2>
+            <p>
+                All contracts will undergo rigorous audits. Model provenance and IP issues will be handled via transparent data sourcing and on-chain traceability.
+            </p>
+        </section>
+        <section>
+            <h2>Legal Disclaimer</h2>
+            <div class="disclaimer">
+                Artihm does not guarantee profits and is not intended for investment advice. Users should conduct their own due diligence and comply with their local regulations.
             </div>
-            
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span>Are the generated NFTs marketplace-ready for trading?</span>
-                    <span class="faq-toggle">▼</span>
-                </div>
-                <div class="faq-answer">
-                    Absolutely! Every generated NFT comes with marketplace-compliant metadata that works seamlessly with OpenSea, Magic Eden, Rarible, and other major platforms. Your collections are instantly ready for minting and trading.
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span>What file formats do you provide for the metadata?</span>
-                    <span class="faq-toggle">▼</span>
-                </div>
-                <div class="faq-answer">
-                    We deliver metadata in industry-standard JSON format along with CSV files optimized for OpenSea bulk uploads. All files follow ERC-721 and ERC-1155 standards for maximum compatibility.
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span>Is there a limit on collection size?</span>
-                    <span class="faq-toggle">▼</span>
-                </div>
-                <div class="faq-answer">
-                    No restrictions! Generate collections of any size, from small exclusive drops to large-scale projects with thousands of unique NFTs.
-                </div>
-            </div>                
         </section>
     </main>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <div class="logo" style="margin-bottom: 1.5rem;">
-                    <div class="logo-icon"><img src="./assets/img/logo.png" alt="Artihm Logo" style="width:30px" ></div>
-                    <div>
-                        <div style="font-size: 0.7rem; color: var(--text-secondary); font-weight: 400;">Artihm</div>
-                    </div>
-                </div>
-                <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">
-                    Latest news, articles, and resources in the blockchain space.
-                </p>
-            </div>
-                      
-            <div class="footer-section">
-                <h4>Social Media</h4>
-                <a href="https://x.com/artihmai" target="_blank">Twitter</a>
-                <a href="#" onclick="showComingSoon('Discord'); return false;">Discord</a>
-                <a href="#" onclick="showComingSoon('YouTube'); return false;">YouTube</a>
-                <a href="#" onclick="showComingSoon('GitHub'); return false;">GitHub</a>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <p>Copyright © 2025 - Artihm AI. All rights reserved.</p>
-        </div>
-    </footer>
-
     <script>
-        // Matrix Rain Effect
-        function createMatrixRain() {
-            const matrixContainer = document.querySelector('.matrix-rain');
-            const chars = '01';
-            
-            for (let i = 0; i < 50; i++) {
-                const column = document.createElement('div');
-                column.className = 'matrix-column';
-                column.style.left = Math.random() * 100 + '%';
-                column.style.animationDuration = (Math.random() * 3 + 2) + 's';
-                column.style.animationDelay = Math.random() * 2 + 's';
-                
-                let columnText = '';
-                for (let j = 0; j < 20; j++) {
-                    columnText += chars[Math.floor(Math.random() * chars.length)];
-                }
-                column.textContent = columnText;
-                
-                matrixContainer.appendChild(column);
+        // Token Utility Data
+        const utilities = [
+            {
+                title: "Minting Fees",
+                desc: "Use ART tokens to pay for minting new NFTs on the platform."
+            },
+            {
+                title: "Access to Advanced AI Models",
+                desc: "Unlock premium generative models and features with ART tokens."
+            },
+            {
+                title: "Governance Voting",
+                desc: "Participate in DAO proposals and vote on platform decisions."
+            },
+            {
+                title: "Staking for Yield & Rewards",
+                desc: "Stake ART to earn rewards and share in platform revenue."
+            },
+            {
+                title: "Marketplace Purchases",
+                desc: "Buy featured NFTs and collections in the Artihm marketplace using ART."
             }
-        }
-
-        // FAQ Toggle
-        function toggleFaq(element) {
-            const faqItem = element.parentElement;
-            const isActive = faqItem.classList.contains('active');
-            
-            document.querySelectorAll('.faq-item').forEach(item => {
-                item.classList.remove('active');
-            });
-            
-            if (!isActive) {
-                faqItem.classList.add('active');
-            }
-        }
-
-        // Coming Soon Alert for Social Links
-        function showComingSoon(platform) {
-            const alertModal = document.createElement('div');
-            alertModal.style.cssText = `
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: rgba(0, 0, 0, 0.8);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: 10000;
-                backdrop-filter: blur(10px);
-            `;
-            
-            const alertBox = document.createElement('div');
-            alertBox.style.cssText = `
-                background: var(--glass-bg);
-                border: 2px solid var(--primary-neon);
-                border-radius: 20px;
-                padding: 2rem;
-                max-width: 400px;
-                text-align: center;
-                backdrop-filter: blur(20px);
-                box-shadow: 0 20px 50px rgba(0, 255, 255, 0.3);
-            `;
-            
-            alertBox.innerHTML = `
-                <div style="color: var(--primary-neon); font-size: 2rem; margin-bottom: 1rem;">⚠️</div>
-                <h3 style="color: var(--text-primary); margin-bottom: 1rem; font-family: 'Orbitron', monospace;">Coming Soon</h3>
-                <p style="color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.5;">Our ${platform} page will be available soon!</p>
-                <button onclick="this.parentElement.parentElement.remove()" style="
-                    background: linear-gradient(45deg, var(--primary-neon), var(--secondary-neon));
-                    border: none;
-                    padding: 0.8rem 2rem;
-                    border-radius: 25px;
-                    color: var(--bg-dark);
-                    font-weight: 700;
-                    font-family: 'Orbitron', monospace;
-                    cursor: pointer;
-                    text-transform: uppercase;
-                    letter-spacing: 1px;
-                ">OK</button>
-            `;
-            
-            alertModal.appendChild(alertBox);
-            document.body.appendChild(alertModal);
-            
-            // Close modal when clicking outside
-            alertModal.addEventListener('click', function(e) {
-                if (e.target === alertModal) {
-                    alertModal.remove();
-                }
-            });
-        }
-
-        // Advanced Scroll Effects
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const rate = scrolled * -0.5;
-            
-            // Background animation scroll effect
-            const bgAnimation = document.querySelector('.bg-animation');
-            bgAnimation.style.transform = `translateY(${rate}px) rotate(${scrolled * 0.01}deg)`;
-        });
-
-        // Intersection Observer for Animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0) scale(1)';
-                }
-            });
-        }, observerOptions);
-
-        // Animate elements on scroll
-        document.querySelectorAll('.feature-card, .faq-item').forEach(element => {
-            element.style.opacity = '0';
-            element.style.transform = 'translateY(50px) scale(0.9)';
-            element.style.transition = 'all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
-            observer.observe(element);
-        });
-
-        // Mobile menu toggle
-        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
-            const nav = document.querySelector('.nav');
-            nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
-        });
-
-        // Initialize matrix rain
-        createMatrixRain();
-
-        // Glitch effect for title - Fixed version
-        let glitchInterval;
-        function glitchTitle() {
-            const title = document.querySelector('.hero h1');
-            if (!title) return;
-            
-            const originalText = title.textContent;
-            const glitchChars = '!@#$%^&*()_+-=[]{}|;:,.<>?';
-            
-            // Clear any existing interval
-            if (glitchInterval) {
-                clearInterval(glitchInterval);
-            }
-            
-            let iterations = 0;
-            glitchInterval = setInterval(() => {
-                title.textContent = originalText
-                    .split('')
-                    .map((char, index) => {
-                        if (index < iterations) {
-                            return originalText[index];
-                        }
-                        return glitchChars[Math.floor(Math.random() * glitchChars.length)];
-                    })
-                    .join('');
-                
-                if (iterations >= originalText.length) {
-                    clearInterval(glitchInterval);
-                    title.textContent = originalText;
-                    glitchInterval = null;
-                }
-                iterations += 1/3;
-            }, 30);
-        }
-
-        // Trigger glitch effect occasionally - only when title is visible
-        let glitchTimer;
-        function startGlitchTimer() {
-            if (glitchTimer) clearTimeout(glitchTimer);
-            glitchTimer = setTimeout(() => {
-                const heroSection = document.querySelector('.hero');
-                const rect = heroSection.getBoundingClientRect();
-                const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
-                
-                if (isVisible) {
-                    glitchTitle();
-                }
-                startGlitchTimer(); // Restart timer
-            }, 10000);
-        }
-
-        startGlitchTimer();
-
-        // Connect Wallet Button Alert
-        document.getElementById('connect-wallet-btn').addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            // Create custom alert modal
-            const alertModal = document.createElement('div');
-            alertModal.style.cssText = `
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: rgba(0, 0, 0, 0.8);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: 10000;
-                backdrop-filter: blur(10px);
-            `;
-            
-            const alertBox = document.createElement('div');
-            alertBox.style.cssText = `
-                background: var(--glass-bg);
-                border: 2px solid var(--primary-neon);
-                border-radius: 20px;
-                padding: 2rem;
-                max-width: 400px;
-                text-align: center;
-                backdrop-filter: blur(20px);
-                box-shadow: 0 20px 50px rgba(0, 255, 255, 0.3);
-            `;
-            
-            alertBox.innerHTML = `
-                <div style="color: var(--primary-neon); font-size: 2rem; margin-bottom: 1rem;">⚠️</div>
-                <h3 style="color: var(--text-primary); margin-bottom: 1rem; font-family: 'Orbitron', monospace;">Coming Soon</h3>
-                <p style="color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.5;">It will become active some time after the launch.</p>
-                <button onclick="this.parentElement.parentElement.remove()" style="
-                    background: linear-gradient(45deg, var(--primary-neon), var(--secondary-neon));
-                    border: none;
-                    padding: 0.8rem 2rem;
-                    border-radius: 25px;
-                    color: var(--bg-dark);
-                    font-weight: 700;
-                    font-family: 'Orbitron', monospace;
-                    cursor: pointer;
-                    text-transform: uppercase;
-                    letter-spacing: 1px;
-                ">OK</button>
-            `;
-            
-            alertModal.appendChild(alertBox);
-            document.body.appendChild(alertModal);
-            
-            // Close modal when clicking outside
-            alertModal.addEventListener('click', function(e) {
-                if (e.target === alertModal) {
-                    alertModal.remove();
-                }
-            });
-        });
-
-        // Enhanced button interactions
-        document.querySelectorAll('.generate-btn, .contact-btn').forEach(btn => {
-            btn.addEventListener('mousemove', function(e) {
-                const rect = this.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                
-                this.style.setProperty('--mouse-x', x + 'px');
-                this.style.setProperty('--mouse-y', y + 'px');
-            });
-        });
-
-        // Animated typing effect for prompt text
-        const animatedPromptText = document.querySelector('#animated-prompt');
-        const prompts = [
-            'Prompt the image you want to create as a base NFT',
-            'Generate futuristic cyberpunk characters...',
-            'Create mystical fantasy creatures...',
-            'Design abstract digital artworks...',
-            'Build sci-fi spacecraft collection...'
         ];
-        
-        let currentPromptIndex = 0;
-        
-        function typePromptText() {
-            const prompt = prompts[currentPromptIndex];
-            let index = 0;
-            
-            // Clear current text
-            animatedPromptText.textContent = '';
-            
-            const typeInterval = setInterval(() => {
-                animatedPromptText.textContent = prompt.substring(0, index);
-                index++;
-                
-                if (index > prompt.length) {
-                    clearInterval(typeInterval);
-                    setTimeout(() => {
-                        currentPromptIndex = (currentPromptIndex + 1) % prompts.length;
-                        setTimeout(typePromptText, 1000);
-                    }, 3000);
-                }
-            }, 50);
-        }
-        
-        setTimeout(typePromptText, 2000);
 
-        // Join Launch Button Click Handler
-        document.getElementById('join-launch-btn').addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            // Create custom modal for launch information
-            const launchModal = document.createElement('div');
-            launchModal.style.cssText = `
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: rgba(0, 0, 0, 0.8);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: 10000;
-                backdrop-filter: blur(10px);
-            `;
-            
-            const launchBox = document.createElement('div');
-            launchBox.style.cssText = `
-                background: var(--glass-bg);
-                border: 2px solid var(--primary-neon);
-                border-radius: 20px;
-                padding: 2rem;
-                max-width: 500px;
-                text-align: center;
-                backdrop-filter: blur(20px);
-                box-shadow: 0 20px 50px rgba(0, 255, 255, 0.3);
-            `;
-            
-            launchBox.innerHTML = `
-                <div style="color: var(--primary-neon); font-size: 3rem; margin-bottom: 1rem;">🚀</div>
-                <h3 style="color: var(--text-primary); margin-bottom: 1rem; font-family: 'Orbitron', monospace; font-size: 1.5rem;">Join Our Launch!</h3>
-                <p style="color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.6;">
-                    Be among the first to experience the future of AI-powered NFT creation. 
-                    Join to launch.
-                </p>
-                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                    <button onclick="window.open('https://twitter.com', '_blank')" style="
-                        background: linear-gradient(45deg, var(--primary-neon), var(--secondary-neon));
-                        border: none;
-                        padding: 0.8rem 1.5rem;
-                        border-radius: 25px;
-                        color: var(--bg-dark);
-                        font-weight: 700;
-                        font-family: 'Orbitron', monospace;
-                        cursor: pointer;
-                        text-transform: uppercase;
-                        letter-spacing: 1px;
-                        font-size: 0.9rem;
-                    ">Join</button>
-                    <button onclick="this.parentElement.parentElement.parentElement.remove()" style="
-                        background: transparent;
-                        border: 2px solid var(--primary-neon);
-                        padding: 0.8rem 1.5rem;
-                        border-radius: 25px;
-                        color: var(--primary-neon);
-                        font-weight: 700;
-                        font-family: 'Orbitron', monospace;
-                        cursor: pointer;
-                        text-transform: uppercase;
-                        letter-spacing: 1px;
-                        font-size: 0.9rem;
-                    ">Close</button>
-                </div>
-            `;
-            
-            launchModal.appendChild(launchBox);
-            document.body.appendChild(launchModal);
-            
-            // Close modal when clicking outside
-            launchModal.addEventListener('click', function(e) {
-                if (e.target === launchModal) {
-                    launchModal.remove();
-                }
-            });
+        // Render utility cards
+        const utilityList = document.getElementById('utility-list');
+        utilities.forEach(util => {
+            const card = document.createElement('div');
+            card.className = 'utility-card';
+            card.innerHTML = `<h4>${util.title}</h4><p>${util.desc}</p>`;
+            utilityList.appendChild(card);
         });
     </script>
 </body>
