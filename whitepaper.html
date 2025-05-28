@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Artihm Whitepaper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: #fff;
+            color: #000;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #fff;
+            color: #000;
+            text-align: center;
+            padding: 1.5em 0 1em 0;
+            border-bottom: 1px solid #000;
+        }
+        main {
+            max-width: 700px;
+            margin: 2em auto;
+            padding: 1em;
+        }
+        section {
+            margin-bottom: 2em;
+        }
+        h1, h2, h3, h4 {
+            color: #000;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+        }
+        h1 {
+            margin-top: 0;
+        }
+        h2 {
+            font-size: 1.3em;
+            border-left: 3px solid #000;
+            padding-left: 0.5em;
+        }
+        h3 {
+            font-size: 1.1em;
+        }
+        ul, ol {
+            padding-left: 1.2em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+            background: #fff;
+            color: #000;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 0.5em 0.8em;
+            text-align: left;
+        }
+        th {
+            background: #fff;
+            font-weight: bold;
+        }
+        .token-utility {
+            margin-top: 1em;
+        }
+        .utility-card {
+            border: 1px solid #000;
+            padding: 0.7em;
+            margin-bottom: 0.7em;
+            background: #fff;
+        }
+        .disclaimer {
+            background: #fff;
+            color: #000;
+            border: 1px solid #000;
+            padding: 1em;
+            margin-top: 2em;
+            font-size: 0.98em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Artihm Whitepaper</h1>
+        <p>Version 1.0 · May 2025</p>
+    </header>
+    <main>
+        <section>
+            <h2>Abstract</h2>
+            <p>
+                Artihm is a decentralized AI-driven NFT creation and deployment platform. By combining artificial intelligence with blockchain technology, Artihm allows users to generate unique, verifiably scarce digital artworks (NFTs) autonomously and deploy them on-chain. The ART token powers the ecosystem, enabling governance, minting, and incentivizing participation.
+            </p>
+        </section>
+        <section>
+            <h2>Vision</h2>
+            <p>
+                To democratize creativity by giving anyone access to generative AI tools that produce high-quality art and collectibles—fully secured, owned, and monetized via blockchain.
+            </p>
+        </section>
+        <section>
+            <h2>Key Features</h2>
+            <ul>
+                <li><b>AI-Generated Art:</b> AI models trained on diverse art styles and inputs generate unique NFT visuals and metadata.</li>
+                <li><b>NFT Deployment:</b> Instantly deploy artworks to EVM-compatible blockchains with smart contracts.</li>
+                <li><b>Rarity Engine:</b> Built-in rarity and trait combinatorics ensure each piece is unique and collectible.</li>
+                <li><b>NFT Studio:</b> No-code interface to create, preview, and mint collections.</li>
+                <li><b>DAO Governance:</b> ART token holders govern key decisions including model training direction, platform fees, and treasury use.</li>
+                <li><b>Creator Rewards:</b> Revenue-sharing and staking models for those who contribute training data or prompt templates.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Tokenomics</h2>
+            <table>
+                <tr>
+                    <th>Token Symbol</th>
+                    <td>ART</td>
+                </tr>
+                <tr>
+                    <th>Total Supply</th>
+                    <td>1,000,000,000</td>
+                </tr>
+                <tr>
+                    <th>Allocation</th>
+                    <td>
+                        <ul style="margin:0; padding-left:1.1em; list-style-type: disc;">
+                            <li>10% Ecosystem & Rewards</li>
+                            <li>20% Community Treasury</li>
+                            <li>10% Team</li>
+                            <li>10% Strategic Partnerships</li>
+                            <li>12.5% Liquidity</li>
+                            <li>37.5% Fair Launch</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2>ART Token Utility</h2>
+            <div class="token-utility" id="utility-list">
+                <!-- JS will populate utility cards here -->
+            </div>
+        </section>
+        <section>
+            <h2>Technology Stack</h2>
+            <ul>
+                <li><b>Backend:</b> Python, PyTorch (for AI models), Node.js</li>
+                <li><b>Frontend:</b> React.js, Tailwind</li>
+                <li><b>Blockchain:</b> Base + other EVM-compatible chains</li>
+                <li><b>Storage:</b> IPFS & Arweave for metadata and image permanence</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Roadmap</h2>
+            <div>
+                <div>
+                    <h3>Q2 2025</h3>
+                    <ul>
+                        <li>MVP Launch: NFT Generator & Basic Minting</li>
+                        <li>ART Token Generation Event</li>
+                        <li>Genesis Collection Launch</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Q3 2025</h3>
+                    <ul>
+                        <li>DAO Formation</li>
+                        <li>Marketplace Integration</li>
+                        <li>AI Prompt Marketplace</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Q4 2025</h3>
+                    <ul>
+                        <li>Multichain Deployment</li>
+                        <li>Trait-Based NFT Editor</li>
+                        <li>Community Airdrop</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>2026</h3>
+                    <ul>
+                        <li>On-chain AI inference experimentation</li>
+                        <li>Integration with game and metaverse platforms</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Security & Audits</h2>
+            <p>
+                All contracts will undergo rigorous audits. Model provenance and IP issues will be handled via transparent data sourcing and on-chain traceability.
+            </p>
+        </section>
+        <section>
+            <h2>Legal Disclaimer</h2>
+            <div class="disclaimer">
+                Artihm does not guarantee profits and is not intended for investment advice. Users should conduct their own due diligence and comply with their local regulations.
+            </div>
+        </section>
+    </main>
+    <script>
+        // Token Utility Data
+        const utilities = [
+            {
+                title: "Minting Fees",
+                desc: "Use ART tokens to pay for minting new NFTs on the platform."
+            },
+            {
+                title: "Access to Advanced AI Models",
+                desc: "Unlock premium generative models and features with ART tokens."
+            },
+            {
+                title: "Governance Voting",
+                desc: "Participate in DAO proposals and vote on platform decisions."
+            },
+            {
+                title: "Staking for Yield & Rewards",
+                desc: "Stake ART to earn rewards and share in platform revenue."
+            },
+            {
+                title: "Marketplace Purchases",
+                desc: "Buy featured NFTs and collections in the Artihm marketplace using ART."
+            }
+        ];
+
+        // Render utility cards
+        const utilityList = document.getElementById('utility-list');
+        utilities.forEach(util => {
+            const card = document.createElement('div');
+            card.className = 'utility-card';
+            card.innerHTML = `<h4>${util.title}</h4><p>${util.desc}</p>`;
+            utilityList.appendChild(card);
+        });
+    </script>
+</body>
+</html>
